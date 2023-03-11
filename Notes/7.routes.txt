@@ -1,0 +1,27 @@
+When we are using express it provide us very inportant veature whichi is routing. 
+In our application oc different routes we want to send some json data back to user.
+
+It refers to how our server respond to client request on particular route. 
+
+We have endpoint then we have routes ->
+
+http://localhost:8000/api/v1/user/instagram -> we want to send insta data of user
+http://localhost:8000/api/v1/user/twitter -> we want to send twitter data of user
+
+
+use to handle HTTP requests
+
+We can use RapidAPI for checking the data.
+
+
+In routes we have parameters -> /user/instagram -> /user/:social
+
+We can use req.params
+
+
+In routes we have query also -> /user/instagram?q=priyansh
+
+we can use req.query for this.
+
+
+

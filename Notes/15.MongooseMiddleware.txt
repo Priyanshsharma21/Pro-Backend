@@ -1,0 +1,11 @@
+Inside the mongodb we have mainly 2 middlewares -> Pre and Post
+
+
+Pre ->
+
+const userSchema = new mongoose.Schema({})
+
+userSchema.pre('save', function(next){
+    next()
+})
+

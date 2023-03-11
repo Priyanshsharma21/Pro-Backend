@@ -1,0 +1,60 @@
+There are 2 types of forms - > Get and Post
+
+GET - Get method is used to retriev information from server -> Get form example is search box
+
+Searchbox is also an form, now when we search this query can be seen in our URL and it is limited in size, using this url (req.query) we can use it in backend for searching purpose.
+
+
+POST - This are used to submit information to server. This data is not visible to user directly like GET. This can have sencetive informations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Below is the best form prectice example - >
+import React, { useState } from 'react';
+
+function MyForm() {
+  const [formData, setFormData] = useState({});
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // use formData to make API call or submit to server
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" onChange={handleChange} />
+
+      <label htmlFor="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" onChange={handleChange} />
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default MyForm;

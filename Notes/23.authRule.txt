@@ -1,0 +1,35 @@
+SignUp -> 
+
+1. User will send name, email, password - recive it in req.body ->
+2. Write a check - if all fields exist.
+Note -> password should be encrypted from the model only.
+3. Create the user.
+4. Get the JWT token (create it)
+5. Send the cookie ->
+const options = {
+        expires : new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+        httpOnly : true,
+    }
+
+
+    res.status(200).cookie('token',token,options).json({
+        success : true,
+        token,
+        user
+})
+
+
+
+
+Login ->
+
+1. User will enter email and password - take it and recieve it from req.body
+2. find that used in our database, if it don't exist then tell them to register.
+3. Then check if password is correct or not -> If not error.
+4. provide them token
+
+
+
+Logout ->
+Note -> JWT tokens are stateless -> If anyone has the token and it is not expire then anyone can login
+hence we have to delete it

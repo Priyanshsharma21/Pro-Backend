@@ -1,0 +1,6 @@
+VS Code
+Postman
+Nodejs
+Chrome
+Git
+Mongodb

@@ -1,0 +1,38 @@
+A backend should have ->
+
+Folders - 
+--config
+--models
+--middlewares
+--controllers
+--routes
+--utils
+--seeds
+.env
+.gitignore
+app.js
+index.js
+
+
+
+config: The config folder typically contains configuration files for your application, such as database configurations, environment variables, and other application settings.
+
+models: The models folder contains the schema definition for your database, such as user models, product models, or any other data models that your application requires.
+
+middlewares: The middlewares folder contains functions that are executed before a route handler. Common examples include authentication and logging.
+
+controllers: The controllers folder typically contains functions that handle requests from the client, such as creating, updating, or deleting a resource.
+
+routes: The routes folder typically contains files that define the routes for your application. Each file in this folder typically represents a separate resource, such as users or products.
+
+utils: The utils folder contains utility functions or modules that are used throughout your application.
+
+seeds: The seeds folder contains files that populate your database with initial data. This is useful for testing and developing your application.
+
+.env: The .env file contains environment variables for your application. These variables are used to configure your application for different environments, such as development, staging, or production.
+
+.gitignore: The .gitignore file contains a list of files and directories that should not be tracked by Git.
+
+app.js: The app.js file is the main entry point for your application. This file typically contains middleware configuration and sets up the routes for your application.
+
+index.js: The index.js file is used to start your application. This file typically imports the app.js file and starts the server.

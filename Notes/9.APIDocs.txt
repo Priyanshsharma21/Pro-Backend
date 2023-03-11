@@ -1,0 +1,68 @@
+After we make our api we have can write the docs for the api so than we can use it,
+like in frontend we can use to check which route do what.
+
+We will use swagger -> install swagger UI and then YMAL(like json)
+
+import swaggerUi from 'swagger-ui-express';
+import YAML from 'yamljs';
+const swaggerDocument = YAML.load('./swagger.yaml');
+
+
+const app = express();
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
+
+And now on localhost:8080/api-docs we will see our app docs
+
+
+
+Make nodemon.json and inside write this to your
+{
+    "ext" : ".js, .jsx, .yaml, .json"
+}
+
+this will take care of this file extentions
+restart it
+
+
+For basic structure we have - 
+https://swagger.io/docs/specification/basic-structure/
+
+
+1. 
+Basic Informations - Title
+openapi : 3.0.0
+info: 
+  title : Social App
+  descriptions : Our first social App     
+  version: 0.1.9
+
+
+Server Informartoin - Dropdown
+servers:
+  - url: http://localhost:8080/api/v1/user
+    description: This is the base url for this api
+
+
+Authorizaition ->
+
+components:
+  securitySchemes:
+
+   basicAuth:           
+      type: http
+      scheme: basic
+
+
+   bearerAuth:            
+      type: http
+      scheme: bearer
+      bearerFormat: JWT    
+
+ 
+
+
+
+Dekho bhai swagger ke madad se tun docs bana sakte ho but wao boading kaam tum chatGPT dada ko de do wao kar lega.
+

@@ -1,0 +1,28 @@
+Good prompt for chatGfa-pull-left
+
+From Now I will give you the notes I made between " ", and you just have to tell me in few lines that I will show you how that what are the main python doncept covered in that file. Write ok if you accept it. Example given below -
+Code - 
+"
+# Output
+# print("hello")
+# print("hello \n world")
+# print("String"+" "+ " hellow")
+
+
+# input
+# name = input("What is your name\n")
+# city = input("What your city name\n:") // input always string
+# length = len(name + city)
+# print("Your band name is : "+name +" "+ city + " rockers");
+# better way is fstring f"Your band name is {name} {city} {rocker}"
+# print(length)
+
+
+# Note -> ; is not compalciry
+"
+
+Output - 
+1. How to take input.
+2. how to print output
+3. how to use f string
+4. How to use length function in python.

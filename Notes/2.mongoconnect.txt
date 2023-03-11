@@ -1,0 +1,10 @@
+Mongodb ->
+
+Locally we can connect with mongodb using
+mongodb://localhost:27017/
+
+and for atlas -> login to atlas then new project -> connect then choose the network and then enter username password and we will get the connection  url which wed can use to connect.
+
+For compass just copy the compass url and paste it in compass for better GUI
+
+Use coggle or miro for mind map.

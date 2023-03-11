@@ -1,0 +1,68 @@
+1. Take user information - fName, lName, email, Password...
+2. Check all the mendotary fields.
+3. check if already register or not.
+4. Take care of password.
+5. Generate token or send success message.
+
+
+import mongoose from 'mongoose';
+
+const { Schema, model } = mongoose;
+
+const userSchema = Schema({
+    fName : {
+        type: String,
+        default:null,
+        required: true,
+    },
+
+    lName : {
+        type: String,
+        default:null,
+        required: true,
+    },
+
+    email : {
+        type : String,
+        required: true,
+        unique: [true, 'This field is Required'],
+    },
+    password : {
+        type: String,
+        required: true,
+    },
+    token:{
+        type: String,
+    }
+
+})
+
+const User = new model('User', userSchema);
+
+export default User;
+
+
+
+
+In register.js ->
+export const registerUser = async (req, res) => {
+    const {
+        fName,
+        lName,
+        email,
+        password
+    } = req.body;
+
+    if (!(email && password && fName && lName)) {
+        res.status(400).json({
+            message: 'Please Fill all the fields'
+        })
+        console.log("Please fill all the field")
+    }
+
+    const existingUser = await User.findOne({
+        email : email,
+    })
+
+    existingUser && res.status(401).json({message : 'User Already exist'})
+}

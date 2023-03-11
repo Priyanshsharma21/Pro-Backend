@@ -1,0 +1,9 @@
+Let's see how forget password works ->
+
+Let's say we forget password or we want to change the password then ->
+
+1. We will send a request to server by clicking forget password btn and then we will enter our mail and a mail is been send to us.
+
+2. Now first user is been checked in the database, if the user exist or not, if user not exist then register, else we have a function called tokenGeneration which will create a token, this token contain String(Hash) and expiry date, this token is been send to both database and user(email)
+
+3. Now user will send new password, now in database we will first check if token expire or not, then we will check the token is same (database token === user token) if same then only we will replace the old password with new one

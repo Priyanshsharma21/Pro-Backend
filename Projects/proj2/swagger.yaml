@@ -1,0 +1,411 @@
+openapi : "3.0.0"
+info : 
+  title : Learn Express and Swagger
+  description : Learning Docs writing for becoming the PRO Backend Developer
+  version : 1.1.0
+  contact : 
+    email : piyuindia4@gmail.com
+    url : "https://priyansh-sharma-portfolio.netlify.app"
+
+
+servers : 
+  - url : "{protocol}://localhost:8080/api/{version}/test"
+    description : For Local Host - regular
+    variables :
+      version : 
+        enum : 
+          - v1
+          - v2
+        default : v1
+      protocol : 
+        enum:
+          - http
+          - https
+        default: http
+    
+
+ 
+paths:
+# string returning route 
+  / : 
+    get : 
+      tags : 
+        - string
+      summary : It returns List of all the course with there name and price.
+      responses :
+        200: 
+          description : All good success
+          content : 
+            application/json: 
+              schema : 
+                type : string
+                example : "Hello from Dev Dose"
+
+        400 : 
+          description : Not found
+        500 : 
+          description : Internal server error
+
+# array returning route 
+  /courses: 
+    get: 
+      tags : 
+        - array
+      summary : It returns List of all the course with there name and price.
+      responses :
+        200: 
+          description : All good success
+          content : 
+            application/json: 
+              schema : 
+                type : array
+                items:
+                  type : object
+                  properties : 
+                    id : 
+                    type : string
+                  name : 
+                    type : string
+                  price : 
+                    type : number
+                example : [{id : 1, name : "ReactJs", price : 245}]
+
+        400 : 
+          description : Not found
+        500 : 
+          description : Internal server error
+
+# object returning route 
+  /courseObj: 
+    get: 
+      tags : 
+        - object
+      summary : It returns Unique Course
+      responses :
+        200: 
+          description : All good success
+          content : 
+            application/json: 
+              schema : 
+                type : object
+                properties : 
+                  id : 
+                    type : string
+                  name : 
+                    type : string
+                  price : 
+                    type : number
+
+        400 : 
+          description : Not found
+        500 : 
+          description : Internal server error
+
+# Dynamic course
+  /course/{courseId}: 
+    get: 
+      tags : 
+        - string
+      summary : It returns course based on courseId
+      parameters : 
+        - name : courseId
+          in: path
+          required: true
+          default: 7
+          schema: 
+            type : string
+
+
+      responses :
+        200: 
+          description : All good success
+          content : 
+            application/json: 
+              schema : 
+                type : array
+                items:
+                  type : object
+                  properties : 
+                    id : 
+                    type : string
+                  name : 
+                    type : string
+                  price : 
+                    type : number
+                example : [{id : 1, name : "ReactJs", price : 245}]
+
+        400 : 
+          description : Not found
+        500 : 
+          description : Internal server error
+
+
+  /addCourse:
+    post:
+      tags:
+        - object
+      summary: Add a new course
+      parameters:
+        - in: body
+          name: body
+          description: The course object to be added
+          required: true
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+                description: The ID of the course
+                example: "8"
+              name:
+                type: string
+                description: The name of the course
+                example: "AngularJS"
+              price:
+                type: number
+                description: The price of the course
+                example: 450
+      responses:
+        200:
+          description: Successfully added the course
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: A success message
+                example: "Course Added"
+              courses:
+                type: array
+                description: The updated course list
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the course
+                      example: 8
+                    name:
+                      type: string
+                      description: The name of the course
+                      example: "AngularJS"
+                    price:
+                      type: number
+                      description: The price of the course
+                      example: 450
+
+  /course:
+    get:
+      tags:
+        - object
+      summary: Search for a course
+      parameters:
+        - in: query
+          name: q
+          description: The search query
+          required: true
+          type: string
+          example: AngularJS
+      responses:
+        200:
+          description: Successfully retrieved the course
+          schema:
+            type: object
+            properties:
+              course:
+                type: array
+                description: The course that matches the search query
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the course
+                      example: 8
+                    name:
+                      type: string
+                      description: The name of the course
+                      example: "AngularJS"
+                    price:
+                      type: number
+                      description: The price of the course
+                      example: 450
+
+  /course/uploadFile : 
+    post:
+      tags:
+        - string
+      summary: uploading course Images
+      parameters:
+        - in: header
+          name: auth
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      
+      responses:
+        200:
+          description: Image uploaded successfully
+        
+components:
+  securitySchemes:
+    cookieAuth: 
+      type : apiKey
+      in: cookie
+      name: token
+
+    BearerAuth: 
+      type: http
+      scheme: bearer
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CHATGPT Docs 
+
+---
+# swagger: "2.0"
+# info:
+#   version: 1.0.0
+#   title: My Tech Business API
+#   description: This is the documentation for the My Tech Business API
+#   contact:
+#     name: Your Name
+#     email: your.email@example.com
+#     url: http://www.example.com
+# host: localhost:8080
+# basePath: /api/v1/test
+# tags:
+#   - name: Test Route
+#     description: Operations for test route
+#   - name: Courses Route
+#     description: Operations for courses route
+# schemes:
+#   - http
+# paths:
+#   /:
+#     get:
+#       tags:
+#         - Test Route
+#       summary: Get a greeting message
+#       description: Returns a greeting message
+#       responses:
+#         200:
+#           description: Successful response
+#           schema:
+#             type: string
+#   /courses:
+#     get:
+#       tags:
+#         - Courses Route
+#       summary: Get the list of courses
+#       description: Returns the list of courses with id, name and price
+#       responses:
+#         200:
+#           description: Successful response
+#           schema:
+#             type: object
+#             properties:
+#               data:
+#                 type: array
+#                 items:
+#                   type: object
+#                   properties:
+#                     id:
+#                       type: integer
+#                       description: ID of the course
+#                     name:
+#                       type: string
+#                       description: Name of the course
+#                     price:
+#                       type: integer
+#                       description: Price of the course
+

@@ -1,0 +1,97 @@
+Basic ->
+API also called Application programming interface.
+So it is a set of rules and protocol that how different system will intrect with each other.
+
+It allow an developer to use other services in order to get data from external server.
+
+Ex-> Weather API or best is Google Map API, now we are building an food delivering app and we want to use map, so building our own data will takes time so we can use google API to get that information from tham and use it. 
+
+we can also build our own api.
+
+
+
+Types of requests ->
+
+1. Get -> To get data (retrive) data from server, we send http request to server and get information resonce back
+2. POST -> To send data, or submit data to server, like we submit an form and in return recive an responce back.
+
+3. Put -> To update the existing information, it replace the existing information object created by POST(create new one) and puT replace the existing one completly.
+
+4. Patch -> Update information but an specific fields.
+
+5.Delete -> Delete piece of information on server
+
+
+6. Head -> Like Get, but only get header.
+7. Connect -> to establish connection.
+
+
+
+
+
+
+3. REST -> An standard use but API's to access data, It makes client and server seprate.
+example ->
+
+Endpoint ->  https://www.googleapis.com/youtube/v3
+Method ->  GET, POST, PUT, DELETE, HEAD, PATCH
+HEADERS -> pAdditional information, like -> API_KEY, content-tye.
+Body -> Data want to send.
+
+
+4. CRUD -> Create(POST), Read(GET), Update(PUT, PATCH), Delete (Delete).
+
+
+5. Status Code -> On every http request we get an status code in response.
+
+
+1. 1XX -> Information recived and something needs to continue.
+
+2. 2XX -> Success recieved inforamrion.
+
+3. 3XX -> Redirections.
+
+4. 4XX -> Client side errors(frontend side)
+
+5. 5XX -> Server side errors.
+
+
+
+
+
+
+6. Rules ->
+
+1. Use prular like -> 
+http://getData/customets/1
+
+
+2. Use - in between
+
+
+3. Never use keywords ->mreserved wrkds
+
+
+4. Query = starts with ?
+query by query serrated by &
+
+http://getData/customets/1?region=USA&brand=puma
+
+
+
+
+
+
+
+7. To get query from url we use ->
+
+
+req.query.queryName
+http://getData/customets/search?q=music
+req.query.q
+
+
+
+And for getting the params we use req.params.
+http://getData/customets/:id
+req.params.id

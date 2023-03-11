@@ -1,0 +1,72 @@
+Mongodb -> 
+
+MongoDB is a NoSQL, document-oriented database.
+It is designed to store, retrieve, and manage semi-structured data, which means data in the form of documents rather than tables.
+MongoDB uses a binary version of JSON called BSON (binary JSON) to store data, making it easy to work with data in a variety of programming languages.
+
+One reason to use MongoDB is its flexibility. MongoDB's document-oriented structure allows for easy changes to the structure of the data without having to alter the entire database. Additionally, MongoDB's horizontal scalability, achieved through sharding, makes it well-suited for handling large amounts of data.
+
+MongoDB is often considered to be better than relational databases like SQL in certain situations. For example, MongoDB's document-oriented structure is well-suited for handling unstructured data, such as data from web or mobile applications. Additionally, MongoDB's horizontal scalability can make it more efficient at handling large amounts of data than relational databases, which can struggle with sharding.
+
+
+Horiontal scale means -> To increase the capacity adding more machines and resources.
+Verticall means -> To increase the capacity -> Adding more power to single machine
+
+
+Mongodb achive it using sharding meaning adding more machine to cluster.
+First data divide into small chinks and then into shards and then share those shards across different mashines
+
+Each shards is single contained unit of data that can be quaried and use independantly.
+
+Sharding is also automatic.
+
+
+Also Big Gaint uses it.
+
+ORM and ODM helps us to perform(CRUD) some operation in database.
+So we will use mongoose, which is the leader in industry.
+
+
+
+
+
+
+
+
+
+
+Nodejs -> 
+
+Node.js is an open-source, cross-platform(run on different os) JavaScript runtime environment that executes JavaScript code outside of a web browser. It allows developers to run JavaScript on the server-side, which enables the creation of server-side applications using JavaScript. Node.js is built on the V8 JavaScript engine, which is the same engine that runs JavaScript in Google Chrome.
+
+One reason to use Node.js is its ability to handle a large number of concurrent connections with high performance. Node.js uses an event-driven, non-blocking I/O model (Means it dont wait for the task to complete it moves to other task and then when the first task complete we get responce, it bacically means async nature of it), which makes it well-suited for building scalable network applications. Additionally, Node.js has a large and active developer community, which has led to the creation of a large number of high-quality modules and packages that can be easily integrated into Node.js applications.
+
+Node.js can be used for various purposes, for example:
+
+Building web servers and web applications
+Building real-time applications, such as chat applications
+Building command-line tools
+Building desktop apps using Electron framework
+Building IoT applications
+Building backend for mobile apps
+
+
+
+
+
+ExpressJs ->
+Express.js is a web application framework for Node.js. It is designed to make it easy to create and maintain web applications by providing a simple and flexible set of features for routing, middleware, and other functionality.
+
+Express.js provides a routing mechanism that allows developers to define how the application should respond to different URLs and HTTP methods. This makes it easy to create RESTful APIs and other web applications. 
+
+Express.js also supports middleware, which are functions that can be used to modify the request and response objects before they are handled by the application. This allows developers to easily add functionality such as authentication, logging, and error handling to their applications.
+
+Express.js is also known for its minimalistic approach, it's minimal, unopinionated and flexible and that's what makes it popular among the developers.
+
+Express.js can be used to build various types of web applications, such as:
+
+RESTful APIs
+Single-page applications (SPAs)
+Server-rendered web applications
+Static file servers
+Additionally, Express.js can be integrated with other JavaScript libraries and frameworks, such as Mongoose for MongoDB, Socket.io for real-time communication and Passport for authentication, to build more complex web applications.

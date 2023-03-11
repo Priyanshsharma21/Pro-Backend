@@ -1,0 +1,55 @@
+Token is like a key to your car.
+Token represent user identity and use for authentication or authorization in applications(User identity)
+Token contain a header + payload + signature.
+Header has mata data.
+Payload has information that needs to be transmitted like cradentials,
+Signature is use to varify the token is valid or not
+
+
+*Amazing Example - 
+Suppose you have a React front-end that communicates with a Node.js back-end via an API. You want to authenticate users using JWT so that they can access protected routes in your application. Here's how you might implement this:
+
+When a user logs in, the back-end generates a JWT and sends it back to the front-end. The JWT contains the user ID and other information that you want to transmit.
+
+The front-end stores the JWT in local storage or a cookie so that it can be used for subsequent API requests.
+
+When the front-end makes an API request that requires authentication, it sends the JWT in the Authorization header of the request.
+
+The back-end verifies the JWT to make sure that it is valid and has not been tampered with. If the JWT is valid, the back-end allows the API request to proceed. If the JWT is not valid, the back-end returns an error response.
+
+
+
+
+import express from 'express';
+import jwt from 'jsonwebtoken';
+
+const app = express();
+
+*define a route for user login
+app.post('/login', async (req, res) => {
+  *perform user authentication here
+  const userId = '123'; // replace with actual user ID
+
+  *generate a JWT and send it back to the client
+  const token = jwt.sign({ userId }, 'secret_key', { expiresIn: '1h' });
+  res.json({ token });
+});
+
+*define a protected route that requires authentication
+app.get('/protected', async (req, res) => {
+  const token = req.headers.authorization;
+
+  *verify the JWT and get the user ID
+  try {
+    const decoded = jwt.verify(token, 'secret_key');
+    const userId = decoded.userId;
+    
+    *perform authorization checks here based on user ID
+
+    res.json({ message: 'You are authorized to access this resource' });
+  } catch (err) {
+    res.status(401).json({ message: 'Authentication failed' });
+  }
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));

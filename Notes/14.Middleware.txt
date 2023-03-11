@@ -1,0 +1,37 @@
+Middleware - Which happens in between of req and res, for example - Authorization.
+Next() - A middleware is basically a function which have req, res and next - after the middleware completes we call next to call next middleware or to generate response.
+
+req - Middleware1(Check if user loggedin or not)----Next----Middleware(Wether user is admin or manager)--Next----> Dashboard.
+
+Ex ->
+
+app.get('/loc', (req,res,next)=>{
+    ....functinality...
+
+    next()
+})
+
+It intercepts with incoming req, do something with it, and pass it to next piece of app
+
+Ex -> we have a middleware which check authentication that user is authN to use this particular route in application or not
+
+
+
+*middleware function to check if user is authenticated
+const isAuthenticated = (req, res, next) => {
+  const token = req.headers.authorization;
+
+  if (!token) {
+    return res.status(401).json({ message: 'Authentication token missing' });
+  }
+
+  *perform validation on token here
+
+  next(); // pass the request along to the next piece of the application
+};
+
+*define a route that requires authentication
+app.get('/api/protected', isAuthenticated, (req, res) => {
+* this code will only be executed if the user is authenticated
+  res.json({ message: 'You are authorized to access this resource' });
+});

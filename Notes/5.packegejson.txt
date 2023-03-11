@@ -1,0 +1,27 @@
+To create an empty node project or to initlize an node app we run ->
+npm init -y
+
+we get packege.json file, 
+this file many information like 
+
+
+{
+  "name": "proj1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type" : "module",
+  "scripts": {
+    "start": "npm start",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
+
+
+dependencies, type modules to use es6 and start script to start your server

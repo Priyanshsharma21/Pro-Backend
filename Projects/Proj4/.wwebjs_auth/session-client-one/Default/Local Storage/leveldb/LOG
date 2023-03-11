@@ -1,0 +1,6 @@
+2023/02/13-14:39:06.236 5fe0 Reusing MANIFEST C:\Users\priya\zBackend\Projects\Proj4\.wwebjs_auth\session-client-one\Default\Local Storage\leveldb/MANIFEST-000001
+2023/02/13-14:39:06.239 5fe0 Recovering log #3
+2023/02/13-14:39:06.241 5fe0 Reusing old log C:\Users\priya\zBackend\Projects\Proj4\.wwebjs_auth\session-client-one\Default\Local Storage\leveldb/000003.log 
+2023/02/13-15:01:51.151 5c50 Level-0 table #5: started
+2023/02/13-15:01:51.162 5c50 Level-0 table #5: 13619 bytes OK
+2023/02/13-15:01:51.168 5c50 Delete type=0 #3

@@ -1,0 +1,8 @@
+Fastify is an open source web framework for nodejs.
+
+Why ->
+1. High performance.
+2. Fast.
+3. Low overhead.
+4. Less resource utilization and more performance
+5. scalable - can handle large number of requests

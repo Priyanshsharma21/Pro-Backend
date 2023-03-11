@@ -1,0 +1,9 @@
+Intall dotenv - >
+
+import * as dotenv from 'dotenv'
+
+dotenv.config()
+
+And Now inside dotenv we can declear in uppercase 
+
+API_KEY = '1e3dwdd23d23d2d'

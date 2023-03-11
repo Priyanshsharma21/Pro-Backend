@@ -1,0 +1,5 @@
+Authentication - Identifing the user identity -
+Ex - user comes to Netflix, now netflix ask them to enter username ans password - and then we get access to your account. 
+
+Authorization - Now it is a process of granting or denying specific resources to the user based on user virified identity.
+Ex - User entered Netflix with 199 plan, Now watch movies and series in 480p, Now user want to watch Movies in 1080 - For that user have to take 599 package Platinium Package, then only they have access to that part.

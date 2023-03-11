@@ -1,0 +1,24 @@
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(`Error fetching data: ${error}`);
+    throw error;
+  }
+}
+
+
+app.get('/users', async (req, res) => {
+  try {
+    const data = await fetchData('https://jsonplaceholder.typicode.com/users');
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching data' });
+  }
+});
+
+
+
+Extra layer protection

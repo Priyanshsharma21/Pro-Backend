@@ -1,0 +1,12 @@
+2 Step Communication works
+
+Scanario - Let's you have a website, now you gave a social login to user, when user clicks on this link - 
+
+1. Redirect to OAuth Provider(FB, Google, Github) 
+2. Now there they will ask user about informations like email and password.
+3. If the user information is correct(means user exist in there database) then OAuth provider will generate JWT token and send it back to you(client).
+4. We can decode this token (By making API request to provider - OAuth provider verify the token) and get all the information about the user like there name, email, profile pic etc.
+
+
+
+We will use Passport Js - An Authentication Middleware

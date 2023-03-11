@@ -1,0 +1,26 @@
+Mongoose is an ODN which help to perform operations in Mongodb.
+Your database whicbh is Mongodb is present in some different continent or country like USA, London or south korea.
+Thats why it takes some time to retrive the data.
+
+import mongoose from 'mongoose';
+const { Schema } = mongoose;
+
+const blogSchema = new Schema({
+  title:  String, // String is shorthand for {type: String}
+  author: String,
+  body:   String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs:  Number
+  }
+})
+
+
+Scehma is the structure How's your data will look like
+
+
+To use blogSchama we have to convert it into Model
+const Blog = mongoose.model('Blog', blogSchema);

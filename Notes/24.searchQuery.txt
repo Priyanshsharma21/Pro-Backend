@@ -1,0 +1,4 @@
+In any app we have search functionality in which we have query, filters which looks something like this.
+
+
+/api/v1/products?search=Bat&page=2&category=sports&rating[gte]=4&price[gte]=1000&price[lte]=5000
