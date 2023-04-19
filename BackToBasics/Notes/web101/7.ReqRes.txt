@@ -1,0 +1,45 @@
+Http request  - Message send by client to serber for requesting for specific information or resource.
+
+HTTP Reqqest contain - 
+HTTP has 3 things -> 
+Request Line -> Method(get,post,put,patch,delete), URL(endpoint), HTTP version. (80, 443)
+
+ Header - Additional information (auth berear token)
+ Body - Actual data.
+
+
+HTTP Response - 
+An HTTP response is the message sent by the server to the client in response to a request.
+
+Response contain 3 things - 
+1. Status line - HTTP version(80,443) + status code(100,200,300,400,500) + Header + body
+
+
+
+
+
+HTTP MEssages -
+HTTP messages are the packets of information that are sent between a client and a server in the HTTP protocol. There are two types of HTTP messages: request messages and response messages.
+
+!HTTP Request Messages:
+-HTTP request messages are sent by the client to request some data or resources from the server. These messages consist of the following components:
+-HTTP Method: Specifies the type of request being made, such as GET, POST, PUT, DELETE, etc.
+URI (Uniform Resource Identifier): Specifies the location of the resource on the server that the client is requesting.
+-HTTP version: Specifies the version of the HTTP protocol being used.
+-Headers: Provide additional information about the request, such as the type of content the client can accept, the encoding used, etc.
+-Body: Some request messages may have an associated message body that provides additional information to the server.
+
+
+!HTTP Response Messages:
+HTTP response messages are sent by the server to respond to the client's request. These messages consist of the following components:
+-Status line: Specifies the HTTP version, status code, and reason phrase.
+-Headers: Provide additional information about the response, such as the type of content returned, the length of the content, etc.
+-Body: The actual data or resource that the client requested.
+
+
+!Example:
+Suppose a client wants to retrieve the content of a webpage from a server using HTTP. The client sends an HTTP GET request message to the server, specifying the URI of the webpage. The server receives the request message and responds with an HTTP response message containing the requested webpage content, along with the appropriate status code and other header information.
+
+
+
+

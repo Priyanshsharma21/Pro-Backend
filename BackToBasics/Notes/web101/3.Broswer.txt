@@ -1,0 +1,60 @@
+A web page is a single document or file that is displayed in a web browser. It typically contains text, images, videos, and other multimedia content, and can be accessed through a unique URL.
+
+A website is a collection of related web pages that are linked together and accessed through a single domain name or URL. A website can contain multiple web pages, each with their own unique content, and may include additional features such as search functionality, interactive forms, or online stores.
+
+They can be created using a variety of web technologies, such as HTML, CSS, JavaScript, and server-side languages like PHP or Python.
+
+
+
+
+
+
+Browser 101 ->
+
+1. User Interface:
+This is the user interface for the browser. It includes the Address Bar, back button, Bookmarking options, Refresh button, etc.
+The browser’s user interface is not specified in any formal specification, but comes from practices shaped over decades of experience (and browsers copying each other).
+As a result, all browsers have UIs that are extremely similar to each other.
+
+This component includes the various elements of the browser that are visible to the user, such as the address bar, navigation buttons, and tabs. The user interface is designed to make it easy for users to browse the web and interact with web pages.
+
+
+
+2. Browser Engine:
+This component is responsible for managing and coordinating the interactions between the various components of the browser. It handles requests for web pages, manages the rendering of content, and executes scripts.
+V8 or chakra.
+
+
+
+3. Rendering Engine:
+Responsible for rendering or displaying the content to user (requested content)
+
+User request for content -> RE take this from network layer in form of packets.
+
+This contain HTML,Css,Js
+Take HTML- convert into DOM
+Take Css - > CSSOM.
+
+While making DOM and CSS DOM, RE download JS frmo network layer 
+Now RE communicate with JS Engine. to execute the JS to manipulate the dom and js dom
+Then RE use UI Backend make layout and  to paint the pexels on screen.
+
+Process is called -> Critical Rendering Path.
+
+
+Network Layer ->
+3 layer in TCP and OSI, use to convert data into packets.
+It is used to make network calls to fetch data
+
+
+
+JavaScript Engine - V8 or chakra
+The JavaScript Engine is used to parse and execute JavaScript code on the DOM or CSSOM. The JavaScript code is provided by the web server, or it can be provided by the web browser (browser extensions or features of the browser like automatic ad-blocking).
+
+Early browsers used JavaScript interpreters, but modern JavaScript engines use Just-In-Time compilation for improved performance.
+
+
+
+Application layer ->
+
+Data storage -> Use to store cookies, localstorage

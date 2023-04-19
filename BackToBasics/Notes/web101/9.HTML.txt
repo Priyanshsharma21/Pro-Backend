@@ -1,0 +1,11 @@
+HTML - Hyper text markup language is a markup language used to make the structure of our website.
+
+It contain many tags, elements, attributes using which we can make out laypout of our website.
+
+For example - div, span, heading, paragraph, img, forms, lists, tables, video, audio, inputs, sementic tags, canvas etc.
+
+Its the basic building block for any website.
+
+HTML - structure.
+CSS - styling
+JS - Functionality

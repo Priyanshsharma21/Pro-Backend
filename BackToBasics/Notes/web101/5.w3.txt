@@ -1,0 +1,46 @@
+1. WWW ->World Wide Web is a system(platform) of interconnected documants which are connected via hyperlinks.
+It is a way how we access the information.
+Web is access through browser
+Web is build using HTML, CSS, JS, HTTP which allow developers to create and share web pages.
+Web is decentralized means anyone can publish there content and anyone can see it.
+Web is important tool for commerce, entertaitment, education etc.
+
+
+
+
+
+
+
+2. HTTP and HTTPS -> Port number 80 and 443 for HTTPS(secure)
+Hyper Text Transfer Protocol - Works on client and server.
+Client sends request and server response it.
+Every request in browser follow HTTP protocol.
+
+1. It is a highest level layer(app layer) of tcp and osi model protocol for communication.
+2. Stateless -> Each req and res is different and independent of other
+3. HTTP has 3 things -> 
+    3.1 - Request Line -> Method(get,post,put,patch,delete), URL(endpoint), HTTP version.
+    3.2 - Header - Additional information
+    3.3 - Body - Actual data.
+
+It is TCP and sometime UDP.
+
+HTTPS- 443 - TCP - Secure HTTPS.
+It encrypt and decrypt the data using cryptographic functions
+Almost 90% website and all the nwe website follows https and its mendatory for website.
+It saves data to be hacked. 
+Provide better security.
+
+
+
+
+
+
+
+
+3. Uniform Resource Locator (URL) - Web address or URL address
+URL is a string used to identify an web resource like website or page or file.
+
+URL = Protocols(HTTP,HTTPS) + domain name (devpriyansh) or IP address(128.24.23.23) + post number(option) + path + query
+
+Url is entered on web address bar to access any page or file

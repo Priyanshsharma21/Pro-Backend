@@ -1,0 +1,73 @@
+Domain Name - Human Readable Name that used to find any website om internet.
+
+Human tends to remember string ealily rather than numbers. 
+
+Domain Name is string of char, easy to remember and use and it map to IP address.
+
+Every website has some domain name associate with it and DN is used to access this website.
+
+
+
+
+
+
+
+
+
+
+
+
+DNS - Domain name system (53) - Used to map domain name ot It's respective IP address.
+
+DNS need speed hence UDP.
+
+How it works -
+
+1. when iser enters domain name on web browser address bar like --> www.google.com
+The browser need IP accress of the server hosting the domain so that it can connext to it and retrive the information we asked for. (client).
+
+
+DNS workes by storing the domain names and there IP in distributed database.
+
+1. User type URL (google.com)
+2. Browser sends request to local DNS resolver to get IP.
+3. local resolver check the IP for domain in cache. of ther then return otherwise it sends this req to root DNS Server.
+4. root DNS Server read the URL from behind, and check the suffix (.com, .in, .org, .gov). Accordint to it request send to respective Top level domain server.
+
+5. TDS - responded with IP of the Authoritative DNS server
+
+6. Then request made to ADNS - and it respond back with IP of the hosting website(google)
+
+7. Browser finally sends the HTTP reqeeqest to server. to get the content
+
+
+The reason why we use DNS is that domain names are easier to remember and use than IP addresses. It is much easier to remember "google.com" than "216.58.194.174". Additionally, domain names can be changed without changing the IP address of the server, making it easier to manage websites and their associated resources. DNS also provides fault tolerance and load balancing by allowing multiple servers to share the load of resolving domain names.
+
+
+
+The management and coordanition of DNS is done by - ICANN
+Internet co for assigned Names and Numbers. 
+
+Non profit org.
+
+1. It manages and coordinate the domain names and IP address associate with it for org or indivisual.
+
+2. Manage the TLD(.com, .org, .in, .gov)
+
+3. Take care of security.
+
+
+
+ICANN is governed by board of directors, like stackholders, tech experts, business mans etc.
+Headquatr in los angeles california. and has multiple office around the world.
+
+
+
+
+
+
+A registrar is a company or organization that manages the registration of domain names on the Internet. It acts as an intermediary between the domain name registrant and the domain name registry.
+
+When someone wants to register a domain name, they typically go through a registrar. The registrar checks if the desired domain name is available and, if so, registers it on behalf of the registrant. The registrar then becomes the official holder of the domain name record in the registry database, which includes the domain name, its expiration date, and the name servers associated with the domain.
+
+The registrar also provides domain name management services, such as renewal reminders, DNS management, and WHOIS privacy protection. They may charge a fee for their services, which can vary depending on the registrar and the specific services offered.

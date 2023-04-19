@@ -1,0 +1,94 @@
+Internet ->
+In this world there are millions of computing devices and they are sharinf data from onw to others.
+All the devices are conntect to each otuer inside network.
+
+Small Area -> LAN
+multiple LAN -> MAN
+
+And Multiple MAN which connects whold world -> 
+
+And collection of this WAN is internet
+
+Internet allow user to communicate, share data, resources from anywhere in this world.
+It is based on set of protocols like (OSI and TCP).
+
+Internet Service Provider (ISP), which provides a connection to the network. Users can access resources on the internet through web browsers, email clients, messaging apps, and other software applications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IP Suit of TCP suit -> So in order to send information from one device to other, there are set of protocols need to be follow, which are divided into layers.
+
+Application, transport, network, data link, physical.
+
+
+1. Physical layer -> Hardware layer, used to send data bits from sender to reciver. last and first layer.
+connector, cables, hum, bridge, topologyu, mux demux are its part.
+
+
+2. Data link layer-> 
+second layer.
+Take packets and convert it to bits.
+1. Hop to Hop delivery.
+2. flow control -> send data accordinf to reciver window size.
+3. Access control -> avoide collision of messages.
+4. error control - crc, checksum.
+5. MAC address -> unique address to find user device.
+
+
+3. Network layer-> Take data and convert it into packets.(unit of information to transfer frmo S->R each packet has header and payload, data divide into managable chunks - packets === efficient transmission of data)
+1. Routung,
+2. Source to dest delivery.
+3. Fregmentation.
+
+4. Transport layer -> Port to port delivery. (one app to other) -convert stream of byts into segments
+1. When user access browser an port is given to it by OS, fomr that oprt to reciver the responsiblity is o transport layer.
+
+2. Fregmentation.
+
+3. Error control.
+
+4. Congestion control.
+
+5. Protocol - TCP(if need relibality - FTP), UDP (if need speed - DNS)
+
+
+
+5. Application layer -> Manage app. have different port provide services and protocols that applications use to communicate over the internet. Provide interface too, encrypton ->
+Echo -> 7
+FTP - 20/21
+SMTP - 25
+DNS - 53
+HTTP - 80
+HTTPS- 443
+
+
+
+
+
+
+
+
+
+
+
+
+IP Address- > Use to find the device location inside the network
+
+IP -> String of numbers seprated with . -> consist of two parts (network address & host address
+
+2 versions -> IPV4 -> 32bit, IPV6-> 128bit)
+
+When user wants to send data to different network or same network then they can use ARP(app resolu proto)
+
+Contain -our IP, our Mac, dest IP, broadcast (fffff) -> all recive,  reciver see ip is of me, comm stablish

@@ -1,0 +1,62 @@
+It is like Ledger
+Ex-> we take 10$ from friend
+we gave 20$ to other friend
+Now we wrote all the record in a paper then it is mutuable anyone can change it 
+
+1. caeser 
+ In ancient all message are encrypted by caeser by shifting letter with some amount
+
+All encryption take message and turn it to cipher
+We can decrypt this ,message if we get right combination
+
+
+2. Hashing
+We take message and pass it through hash function to convert it to hash
+no of char in message == no of char in hash
+
+Anology -> Multiply two number 
+we want 44 -> so 
+2*22 = 44 
+4*11 = 44
+going forward is easy
+going backward is deficult
+44 => factors
+
+
+3. Blockchain 
+!Block
+we write message convert to hash this is one block
+We have data and we want our hash to start with 3 zeros (000) in order to add in block 
+we have to choose correct Nonce number so that hash generate 000 hash for our data
+
+
+1. We put all our data(message) into block by hashing data with nonce
+
+?Chain
+every block have prev and hash part 
+Hash -> Contain hash (creared by nonce) of message 
+Prev -> has hash of previous block 
+All the blocks are combine to each other in such a way
+
+*In every block -> Our message + prev block hash + nonce ==> hash start with (000)
+
+We cant change anything in block (Immutable)
+If we change a single char -> Our hash change -> current nonce will not satisfy the 000 condition
+and this will affact all block(hashes) connect to chain
+
+2. Distributed blockchain 
+We have number of users (PeerA, peerB, peerC)
+1. every user have same hash at starting
+If one of them change any data inside one block -> all the subsequantial block(hashes) affected and 
+and we have to mine every block in order to make it work which will take time
+In this of anyone change data it will reflect in whole distributed system and hance detected
+
+
+This works in cryptocurrency
+
+!. Etherium
+Whloe world changes when this came 
+we can now store code(Contracts) with data so when code executed and satisfy condition then 
+we can store hash in etheraum bloxk
+
+

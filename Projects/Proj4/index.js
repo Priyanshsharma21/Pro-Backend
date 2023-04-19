@@ -34,6 +34,8 @@ client.initialize();
 client.on('message', message => {
     const prompt = message.body
 
+    console.log(prompt)
+
     const sendResponse = async() => {
         try {
             const response = await axios.get(`https://lexica.art/api/v1/search?q=${prompt}`)
@@ -51,7 +53,7 @@ client.on('message', message => {
     
         } catch (error) {
             console.log(error)
-            client.sendMessage('No Images Found For This Prompt, Try Again With Other Prompt')
+            client.sendMessage(message.from,'No Images Found For This Prompt, Try Again With Other Prompt')
         }
     };
     sendResponse();
@@ -68,4 +70,3 @@ const startServer = ()=>{
     }
 }
 startServer()
-
