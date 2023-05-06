@@ -1,0 +1,42 @@
+find in mongoose used to find number of documents which matched the condition and if no condition passed then it will return all the documents, it gives array of objects and of no doc found then it returns empty array
+
+
+The find() method in Mongoose is used to retrieve documents from a MongoDB collection based on a query. Here are some common questions that might come up in an interview about using the find() method in Mongoose:
+
+How do you use the find() method to retrieve all documents from a collection?
+
+javascript
+Copy code
+const Model = require('./model');
+
+! Retrieve all documents from the collection
+Model.find()
+How do you use the find() method to retrieve documents that match a specific condition?
+
+
+
+! Retrieve documents where 'field' is equal to 'value'
+Model.find({ field: value })
+How do you use the find() method to retrieve documents based on multiple conditions?
+
+
+
+! Retrieve documents where 'field1' is equal to 'value1' AND 'field2' is equal to 'value2'
+Model.find({ field1: value1, field2: value2 })
+How do you use the find() method to retrieve a specific number of documents?
+
+
+
+! Retrieve the first 10 documents from the collection
+Model.find().limit(10)
+How do you use the find() method to sort documents based on a field?
+
+
+
+! Retrieve documents and sort them by 'field' in ascending order
+Model.find().sort({ field: 'asc' })
+How do you use the find() method to select specific fields from documents?
+
+
+! Retrieve documents and only return 'field1' and 'field2'
+Model.find().select('field1 field2')

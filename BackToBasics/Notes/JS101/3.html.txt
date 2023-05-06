@@ -1,0 +1,26 @@
+HTML is hyper text markup lannguage which is made in order to create structure of our website.
+HTML contain tags, elements, attributes using which we can declear how our website should look like.
+HTML - Structure.
+CSS - Stylings
+JS - Functionality
+HTML contain it's boilarplate code which is the starting of our HTML.
+It have doctype HTML5, head tag, title tag, meta tags, link tags, body tags, html tag.
+Main content present inside the body tag.
+
+Some of the most used(95%) tags are - 
+Div
+Span
+heading - (1-6)
+paragraph - p
+strong 
+i
+ul
+li
+table,
+form,
+input,
+a,
+video,
+audio,
+img,
+sementic tags - Nav, article, header,footer, section.

@@ -1,0 +1,46 @@
+The save() method is used to save a new document or update an existing document in a collection. To use the save() method, you first create a new instance of the Mongoose model, set the values for the document fields, and then call the save() method on the instance. If the document already exists in the collection, calling save() will update the existing document with the new values.
+
+Here's an example of using the save() method to create a new document:
+
+javascript
+Copy code
+const User = mongoose.model('User', { name: String });
+
+const user = new User({ name: 'John Doe' });
+user.save((err, result) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(result);
+  }
+});
+
+
+The create() method, on the other hand, is a shorthand method that combines the creation and saving of a new document into a single step. You pass an object containing the values for the document fields to the create() method, and Mongoose creates a new document and saves it to the collection in one go.
+
+Here's an example of using the create() method to create a new document:
+
+javascript
+Copy code
+const User = mongoose.model('User', { name: String });
+
+User.create({ name: 'John Doe' }, (err, result) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(result);
+  }
+});
+The main difference between save() and create() is that save() allows you to update an existing document, while create() only creates a new document. Additionally, save() returns the saved document instance, while create() returns a Promise that resolves to the created document.
+
+Some possible interview questions related to save() and create() in Mongoose are:
+
+What is the difference between save() and create() in Mongoose?
+When would you use save() instead of create() in Mongoose?
+When would you use create() instead of save() in Mongoose?
+Can you update an existing document using create() in Mongoose?
+How do you handle errors when using save() or create() in Mongoose?
+Which method returns the saved document instance in Mongoose?
+Which method returns a Promise that resolves to the created document in Mongoose?
+How do you use callbacks with save() and create() in Mongoose?
+How do you use async/await with save() and create() in Mongoose?

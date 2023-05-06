@@ -37,7 +37,10 @@ So we will use mongoose, which is the leader in industry.
 
 Nodejs -> 
 
-Node.js is an open-source, cross-platform(run on different os) JavaScript runtime environment that executes JavaScript code outside of a web browser. It allows developers to run JavaScript on the server-side, which enables the creation of server-side applications using JavaScript. Node.js is built on the V8 JavaScript engine, which is the same engine that runs JavaScript in Google Chrome.
+Node.js is an open-source, cross-platform(run on different os) JavaScript runtime environment that executes 
+JavaScript code outside of a web browser. It allows developers to run JavaScript on the server-side,
+ which enables the creation of server-side applications using JavaScript. Node.js is built on the V8 JavaScript engine, 
+ which is the same engine that runs JavaScript in Google Chrome.
 
 One reason to use Node.js is its ability to handle a large number of concurrent connections with high performance. Node.js uses an event-driven, non-blocking I/O model (Means it dont wait for the task to complete it moves to other task and then when the first task complete we get responce, it bacically means async nature of it), which makes it well-suited for building scalable network applications. Additionally, Node.js has a large and active developer community, which has led to the creation of a large number of high-quality modules and packages that can be easily integrated into Node.js applications.
 

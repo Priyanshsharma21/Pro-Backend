@@ -1,0 +1,23 @@
+JSON is Javascript Object Notation - Its a format of Data interchange, that is easy to read by human and also easy for machine to parse and generate.
+
+Use for data transimission b/w Client and server
+
+It follows some rules,
+data stored in key value form, seprate by commas, key is string and it can contail all the data types like Number, string, bool, object,arrays, functions.
+
+Mordan browser have build in support for JSON.
+And IN Mongoose also data stored in JSON format.
+
+
+
+
+
+BSON is Binary JSON which is schema les(means dont's support a specific structure to store data)
+Use for fast processing of data
+
+
+BSON supports things like - binary data, date/time values, and regular expressions, and also for Numbers it supports Int and flote
+
+In Mongodb Data stored in BSON format which allows the process to become more fast and also data transmission b/w client and serber becomes faster
+
+BSON - Efficient read and write of data

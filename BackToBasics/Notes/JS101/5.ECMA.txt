@@ -1,0 +1,36 @@
+ECMA - European Computer Manufacturers Association
+Which is an international standards organization that publishes standards for information and communication technology. 
+The association was founded in 1961 and has its headquarters in Geneva, Switzerland.
+
+Best known for - JavaScript, C#, and C++
+
+ECMAScript is a standardized version of JavaScript that was developed by ECMA. 
+The first version of ECMAScript was published in 1997, and subsequent versions have been published regularly since then. 
+ECMAScript is now the official name for the JavaScript language, and the terms are often used interchangeably.
+
+In each version of ECMA the new things are been introdused
+
+
+ES1 (1997): The first version of ECMAScript, which standardized the core features of JavaScript, such as variables, functions, loops, and conditionals.
+
+ES2 (1998): This version introduced some minor changes to the language, such as the try/catch statement and the new operator for object instantiation.
+
+ES3 (1999): One of the most significant updates to the language, ES3 introduced regular expressions, the switch statement, and support for try/catch/finally blocks. It also added a number of new methods to built-in objects, such as String and Array.
+
+ES4 (never released): ES4 was intended to be a major update to the language, with new features such as classes, modules, and improved support for large-scale software development. However, it was never released due to disagreements among developers and concerns about compatibility with existing code.
+
+ES5 (2009): This version introduced strict mode, which enforces stricter rules for JavaScript code, as well as new features such as Array.prototype.forEach and JSON parsing and serialization.
+
+ES6/ES2015 (2015): One of the most significant updates to the language, ES6 introduced a number of new features such as let/const for variable declaration, arrow functions, classes, modules, and the spread operator. It also added new methods to built-in objects such as Map, Set, and Promise.
+
+ES7/ES2016 (2016): This version introduced two new features: the exponentiation operator (**) and Array.prototype.includes.
+
+ES8/ES2017 (2017): ES8 introduced several new features such as async/await for handling asynchronous operations, Object.values/Object.entries for working with objects, and String.prototype.padStart/padEnd for string manipulation.
+
+ES9/ES2018 (2018): This version introduced several new features such as rest/spread properties for objects, asynchronous iteration, and Promise.prototype.finally.
+
+ES10/ES2019 (2019): ES10 introduced several new features such as Array.prototype.flat and Array.prototype.flatMap for working with arrays, as well as Object.fromEntries for converting arrays to objects.
+
+ES11/ES2020 (2020): ES11 introduced the nullish coalescing operator (??) and the optional chaining operator (?.) for more concise and safe handling of variables and object properties.
+
+ES12/ES2021 (2021): The most recent version of the language, ES12 introduced several new features such as String.prototype.replaceAll for more advanced string manipulation, Promise.any for handling multiple promises, and WeakRefs for more efficient memory management.

@@ -1,0 +1,109 @@
+Topics that might come - 
+
+1. What is Nodejs
+2. What is ExpressJs
+3. What is Mongodb
+4. What is Mongoose
+
+5. What is routes
+6. What are controllers.
+7. What is schema
+8. What is Models
+9. What is Params
+10. What is Query
+11. What is API
+12. What are some HTTP methods
+13. Request Response Cycle.
+14. Async Await
+15. How Js Works
+16. Promises
+17. Mongoose Methods.
+18. find vs findOne
+19. findById, findByIdAndUpdate, findByIdAndDelete.
+20. isDeleted use.
+21. updateOne vs updateMany vs findOneAndUpdate.
+22. new vs upsert
+23. operators -$and, $or, $not, $nor, $in, $push, $gt, $gte, $lt, $lte, $exists, $type.
+
+Advance Topics - 
+24. What is ref and populate.
+25. How to optimize the operations in mongoose
+26. Sharding.
+27. Cluster
+28. Distributed Database
+29. Horizontal vs Vertical Scaling 
+30. SQL vs No SQL
+31. Middlewares - global and routes
+32. Aggregate methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mongodb: 
+Topics for Tomorrow’s assessment: 
+
+
+Array.map, forEach - done
+request - response cycle on the web - done
+HTTP methods with focus on GET vs POST, ​​nodemon package - done
+JSON - done
+Post request - done
+Query params - done
+Path Params - done
+DB - done
+
+Mongoose Schema - done
+What is Regex - done
+2. Intro to async await - done
+3. Various MongoDB queries - esp. find - done
+   findById count select sort limit skip- done
+Schema data types - done
+Default model vs schema, Save vs create, Nosql vs, find - done
+count - done
+sort - done
+limit - done
+skip - done
+Pagination - done
+findById - done
+regex - done
+ASYNC - done
+AWAIT - done
+Date and moment - done
+findOne vs find - done
+CRUD in mongo  - done
+new flag in update operations - done
+upsert flag in update operations - done
+isDeleted key in mongoose schema - done
+
+
+
+Filter conditions inside find :-
+$or:   e.  find(   { $or : [ {cond1 } , {cond2} , {cond3} ] }  )    
+$in : [0,10,20, 30, 40, 50] 
+$eq
+$ne
+$gt:
+$lt:
+$gte:
+$lte:
+$in:
+ $nin:
+comparisonOperators
+update & updateMany, findOneAndUpdate, findByIdAndUpdate
+Update
+Reference & Populate
+esp updateMany and findOneAndUpdate
+mixed type in mongoose schema

@@ -1,0 +1,15 @@
+Our Machines understand low level lnguage.
+Low level languages are the language which is in the form of (0 & 1)
+
+In order to instruct the machine we can write in 0's and 1's, this is a deficult task(Almost impossible)
+
+So in order to instruct the machine to do work or tasks that we give them.
+
+High Level Languages are made - 
+
+HLL - Languages which are easy to read and write(english).
+
+JavaScript is a high-level programming language that was designed to be easy to use and learn. It is a scripting language that can be used in web browsers to create dynamic and interactive web pages. JavaScript is known for its versatility and is used in a wide range of applications, from simple webpage animations to complex web applications and server-side scripts.
+
+
+JavaScript is a high-level language because it is abstracted from the underlying hardware and operating system. It is a high-level language that is interpreted rather than compiled, which means that the code is executed directly by the browser or server, rather than being translated into machine language beforehand.

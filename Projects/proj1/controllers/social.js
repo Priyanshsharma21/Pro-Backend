@@ -2,11 +2,6 @@ import moment from 'moment'
 
 
 
-
-
-
-
-
 export const greetRoute = (req,res)=>{
     res.send("Welcome to Social Link")
 }
@@ -32,8 +27,9 @@ export const twitter = async(req,res)=>{
     };
 
     res.status(200).json({data : tweet})
-    
 }
+
+
 
 export const insta = async(req,res)=>{
     const insta = {

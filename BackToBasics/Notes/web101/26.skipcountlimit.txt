@@ -1,0 +1,53 @@
+Q: What is the purpose of count() in Mongoose?
+A: The count() method is used to count the number of documents in a collection that match a given query. It returns a Promise that resolves to the count.
+
+Q: How do you use the sort() method in Mongoose?
+A: The sort() method is used to sort the documents in a collection based on a specified field or fields. You can pass an object to the sort() method with the field(s) to sort by and the order (ascending or descending). For example, to sort documents in descending order by the "createdAt" field: MyModel.find().sort({createdAt: -1})
+
+Q: What is the purpose of the limit() method in Mongoose?
+A: The limit() method is used to limit the number of documents returned from a query. You can pass an integer to the limit() method to specify the maximum number of documents to return. For example, to limit the query to return only 10 documents: MyModel.find().limit(10)
+
+Q: What is the purpose of the skip() method in Mongoose?
+A: The skip() method is used to skip a specified number of documents from the beginning of a query result. You can pass an integer to the skip() method to specify the number of documents to skip. For example, to skip the first 5 documents in a query: MyModel.find().skip(5)
+
+Q: Can you use the sort(), limit(), and skip() methods together in a Mongoose query?
+A: Yes, you can use these methods together to perform more complex queries. For example, to sort documents in descending order by the "createdAt" field, limit the result to 10 documents, and skip the first 5 documents: MyModel.find().sort({createdAt: -1}).limit(10).skip(5)
+
+
+
+
+Pagination - 
+const PAGE_SIZE = 10;
+
+// Define your Mongoose schema and model
+const UserSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  age: Number
+});
+
+const UserModel = mongoose.model('User', UserSchema);
+
+! Route for fetching paginated users
+app.get('/users', async (req, res) => {
+  const page = parseInt(req.query.page) || 1; // Default to page 1
+  const skip = (page - 1) * PAGE_SIZE;
+
+  try {
+    const users = await UserModel.find()
+      .skip(skip)
+      .limit(PAGE_SIZE)
+      .exec();
+
+    const totalUsers = await UserModel.countDocuments();
+
+    res.json({
+      users,
+      currentPage: page,
+      totalPages: Math.ceil(totalUsers / PAGE_SIZE),
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});

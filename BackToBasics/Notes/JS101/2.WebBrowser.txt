@@ -1,0 +1,92 @@
+!1. Web 1.0: - User can come and read (Like Newspaper) - Suplex
+Web 1.0, also known as the "static web", was the early stage of the internet that started in the late 1980s and continued through the 1990s. During this period, most web pages were static and served mainly as online brochures or digital catalogs.
+Web 1.0 websites were mostly informational and lacked interactivity. There was very little user-generated content and online commerce was limited. Websites were mostly created by large organizations and were often difficult to update.
+
+Examples of Web 1.0 sites include the original versions of Yahoo and Amazon.
+
+2. Web 2.0: - Full Duplex - User intrection
+Web 2.0, also known as the "social web", emerged in the early 2000s and is characterized by the rise of social media, user-generated content, and interactive web applications.
+Web 2.0 introduced features such as user-generated content, social networking, and the ability to share information easily. Websites became more interactive and engaging, with features such as blogs, wikis, and social media platforms.
+
+Web 2.0 sites encouraged collaboration, user participation, and interactivity, which led to the growth of online communities and social networks.
+
+Examples of Web 2.0 sites include Facebook, Twitter, and Wikipedia.
+
+
+
+3. Web 3.0: - Now you have power on your data, like metaverse mai khudka khet or ghar. Our own NFT. And no one like even the admin can't do with our data. we have full power on our data.
+Web 3.0, also known as the "semantic web", is the next evolution of the web that is still emerging. It is characterized by a focus on machine learning, artificial intelligence, and data-driven applications.
+Web 3.0 is designed to be more intelligent, personalized, and responsive. It is built on top of Web 2.0 and aims to make the web more connected and seamless by enabling data to be shared and integrated more easily.
+
+Web 3.0 applications are designed to be more context-aware, meaning they can understand the meaning and relationships between data, which allows for more intelligent and personalized experiences.
+
+Examples of Web 3.0 sites include blockchain-based platforms, such as Ethereum, and AI-powered virtual assistants, such as Siri and Alexa.
+
+Overall, each evolution of the web has brought new features and capabilities, leading to more interactive and engaging online experiences.
+
+
+
+
+
+!A web page is a single document or file that is displayed in a web browser. It typically contains text, images, videos, and other multimedia content, and can be accessed through a unique URL.
+
+A website is a collection of related web pages that are linked together and accessed through a single domain name or URL. A website can contain multiple web pages, each with their own unique content, and may include additional features such as search functionality, interactive forms, or online stores.
+
+They can be created using a variety of web technologies, such as HTML, CSS, JavaScript, and server-side languages like PHP or Python.
+
+
+
+
+
+
+Browser 101 ->
+
+1. User Interface:
+This is the user interface for the browser. It includes the Address Bar, back button, Bookmarking options, Refresh button, etc.
+The browser’s user interface is not specified in any formal specification, but comes from practices shaped over decades of experience (and browsers copying each other).
+As a result, all browsers have UIs that are extremely similar to each other.
+
+This component includes the various elements of the browser that are visible to the user, such as the address bar, navigation buttons, and tabs. The user interface is designed to make it easy for users to browse the web and interact with web pages.
+
+
+
+2. Browser Engine:
+This component is responsible for managing and coordinating the interactions between the various components of the browser. It handles requests for web pages, manages the rendering of content, and executes scripts.
+V8 or chakra.
+
+
+
+3. Rendering Engine:
+Responsible for rendering or displaying the content to user (requested content)
+
+User request for content -> RE take this from network layer in form of packets.
+
+This contain HTML,Css,Js
+Take HTML- convert into DOM
+Take Css - > CSSOM.
+
+While making DOM and CSS DOM, RE download JS frmo network layer 
+Now RE communicate with JS Engine. to execute the JS to manipulate the dom and js dom
+Then RE use UI Backend make layout and  to paint the pexels on screen.
+
+Process is called -> Critical Rendering Path.
+
+
+Network Layer ->
+3 layer in TCP and OSI, use to convert data into packets.
+It is used to make network calls to fetch data
+
+
+
+JavaScript Engine - V8 or chakra
+The JavaScript Engine is used to parse and execute JavaScript code on the DOM or CSSOM. The JavaScript code is provided by the web server, or it can be provided by the web browser (browser extensions or features of the browser like automatic ad-blocking).
+
+Early browsers used JavaScript interpreters, but modern JavaScript engines use Just-In-Time compilation for improved performance.
+
+
+
+Application layer ->
+
+Data storage -> Use to store cookies, localstorage
+
+

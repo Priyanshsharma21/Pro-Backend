@@ -9,7 +9,7 @@ Server Who provides that service
 
 Client - Device or Application like (web browser, mobile, computer)
 who sends request to server for some resource or service.
-this request send follows some protocols like HTTP or HTTPS or SMPT, SSh etc.
+this request send follows some protocols like HTTP or HTTPS or SMPT, SSH etc.
 
 Server recive it, process it and sen the response to client.
 

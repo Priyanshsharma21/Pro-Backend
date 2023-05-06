@@ -1,9 +1,9 @@
-1. Web Browser 0:43
-2. Html 0:55
-3. High Level 0:58
-4. ECMA 1:07
-5. WASM 1:11
-6. Runtime 1:16
+1. Web Browser - done
+2. Html - done
+3. High Level - done
+4. ECMA - done
+5. WASM - done
+6. Runtime - 
 7. Scripting Language 1:23
 8. Browser Dev Tools 1:26
 9. Interpreted 1:34

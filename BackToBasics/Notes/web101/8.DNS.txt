@@ -23,7 +23,7 @@ DNS need speed hence UDP.
 
 How it works -
 
-1. when iser enters domain name on web browser address bar like --> www.google.com
+1. when user enters domain name on web browser address bar like --> www.google.com
 The browser need IP accress of the server hosting the domain so that it can connext to it and retrive the information we asked for. (client).
 
 

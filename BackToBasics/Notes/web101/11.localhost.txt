@@ -1,0 +1,7 @@
+"localhost" is a hostname that refers to the local computer or machine that a program or application is running on. It is often used to access web services or applications that are running on the same machine as the web browser, web server, or client program.
+
+When a program or application runs on a computer, it listens for incoming connections on one or more ports. The localhost hostname is typically associated with the loopback IP address 127.0.0.1, which is a special address that represents the local machine.
+
+For example, if you are running a web server on your local machine and want to access it from a web browser, you can use the URL "http://localhost:port" (where "port" is the port number that your web server is listening on) to connect to the server. This URL tells the browser to connect to the web server on the local machine using the loopback IP address and the specified port.
+
+Using "localhost" as a hostname can be useful for testing and development purposes, as it allows developers to run and test applications on their local machines without needing to deploy them to a remote server.

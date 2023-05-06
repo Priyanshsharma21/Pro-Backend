@@ -1,0 +1,67 @@
+In Mongoose, the new and upsert flags are used to control how updates to documents are handled.
+
+The new flag is used with the findOneAndUpdate() and findByIdAndUpdate() methods. When new is set to true, these methods will return the updated document after applying the update operation. If new is set to false (the default), the methods will return the document before the update was applied.
+
+Here is an example of using new flag in a findOneAndUpdate() call:
+
+javascript
+Copy code
+const result = await MyModel.findOneAndUpdate(
+  { name: 'John' },
+  { age: 30 },
+  { new: true }
+);
+In this example, the findOneAndUpdate() method will search for a document with the name 'John', update the age field to 30, and return the updated document.
+
+
+
+
+
+
+The upsert flag is used with the update() and updateMany() methods. When upsert is set to true, these methods will create a new document if no document matches the query criteria. If upsert is set to false (the default), the methods will only update existing documents that match the query criteria.
+
+Here is an example of using the upsert flag in an update() call:
+
+javascript
+Copy code
+const result = await MyModel.update(
+  { name: 'John' },
+  { age: 30 },
+  { upsert: true }
+);
+In this example, the update() method will search for a document with the name 'John', update the age field to 30, and create a new document if no matching document is found.
+
+
+
+
+isDeleted - 
+The isDeleted flag is a common practice in databases to mark a record as "soft deleted" instead of physically deleting it. This means that the record is still present in the database but is marked as deleted and excluded from most queries by default. The isDeleted flag can be useful in cases where the deleted data needs to be retained for audit or backup purposes.
+
+In Mongoose, the isDeleted flag can be implemented using a virtual property and a pre-hook middleware function that sets the flag instead of actually deleting the document. Here is an example:
+
+javascript
+Copy code
+const schema = new mongoose.Schema({
+  name: String,
+  isDeleted: {
+    type: Boolean,
+    default: false,
+  },
+}, { timestamps: true });
+
+! Create a virtual property to exclude soft-deleted documents by default
+schema.virtual('isActive').get(function () {
+  return !this.isDeleted;
+});
+
+! Define a pre-hook middleware to set the isDeleted flag instead of actually deleting the document
+schema.pre('remove', { document: true }, function (next) {
+  this.isDeleted = true;
+  this.save({ validateBeforeSave: false });
+  next();
+});
+
+const Model = mongoose.model('Model', schema);
+In this example, we define a isDeleted flag as a boolean property with a default value of false. We also define a virtual property called isActive that returns true for non-deleted documents and false for deleted documents. Finally, we define a pre-hook middleware function that sets the isDeleted flag to true instead of actually deleting the document when the remove() method is called on a document.
+
+By using the isDeleted flag, we can easily filter out soft-deleted documents by default using the isActive virtual property. This can be useful in cases where we need to exclude deleted documents from most queries, but still retain the data for audit or backup purposes.

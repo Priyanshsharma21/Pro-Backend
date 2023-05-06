@@ -35,8 +35,8 @@ example ->
 
 Endpoint ->  https://www.googleapis.com/youtube/v3
 Method ->  GET, POST, PUT, DELETE, HEAD, PATCH
-HEADERS -> pAdditional information, like -> API_KEY, content-tye.
-Body -> Data want to send.
+HEADERS -> Additional information, like -> API_KEY, content-tye.
+Body ->   Data want to send.
 
 
 4. CRUD -> Create(POST), Read(GET), Update(PUT, PATCH), Delete (Delete).

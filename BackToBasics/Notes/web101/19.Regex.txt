@@ -1,0 +1,17 @@
+Regex - Regular Expression
+Powerful tool to work with text(string) data.
+Use in JS for things like - Search, Matching patterns, Manipulating text
+
+Declear b/w - '/' 
+
+
+let regex = /hello/
+
+
+const isHelloPresent = regex.test("My name is Priyansh, hello to everyone") // true
+
+
+Application -
+1. In signup form - User enters mobile Number - Using Regex we can check if mobile number is correct or not.
+2. Search and replace - Example we have banned a word in our site, now when user enters that word then we will search it and replace it with other word
+3. Parse Data - Example Extract email address from a sentence

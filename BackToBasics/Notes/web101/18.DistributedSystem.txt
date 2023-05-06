@@ -1,0 +1,32 @@
+A cluster database is a type of database management system that consists of a group of interconnected servers or nodes working together to provide data storage and processing capabilities. In a cluster database, each server or node shares the workload and acts as a backup for the other nodes, providing a high level of fault tolerance and availability.
+
+Cluster databases are designed to provide high performance and scalability, allowing large amounts of data to be stored and processed in a distributed manner. Cluster databases are often used in high-traffic websites, online gaming systems, financial services, and other applications that require high levels of availability and processing power.
+
+
+Example - Google search Engine -
+Each server in the Google cluster is responsible for storing and processing a portion of the index of web pages that Google uses to provide search results. When a user enters a search query, the query is processed by multiple servers in the cluster, which work together to find the most relevant search results. This distributed approach allows Google to handle massive amounts of search traffic and provide fast and accurate search results to users around the world.
+
+
+
+
+
+A distributed database, on the other hand, is a database that is spread across multiple physical locations, but is managed as a single logical database. A distributed database allows data to be stored and processed in multiple locations, providing a high level of fault tolerance, scalability, and availability.
+
+In a distributed database, each location or node maintains a portion of the data, and communication between nodes is necessary to ensure data consistency and integrity. Distributed databases are often used in applications that require data to be available across different geographic locations, such as online retail systems, travel booking systems, and global financial services.
+
+Both cluster databases and distributed databases offer benefits in terms of scalability, fault tolerance, and availability, but they differ in how they are architected and managed. While cluster databases are typically used for high-performance applications that require processing power and high availability, distributed databases are often used in geographically dispersed applications that require data to be available in multiple locations.
+
+
+
+
+
+
+
+
+
+
+Vertical scaling, also known as scaling up, involves increasing the capacity of a single server or node in a system. This can be achieved by adding more CPU cores, RAM, or storage to the existing server. For example, upgrading a server from 8GB of RAM to 32GB of RAM is a form of vertical scaling. Vertical scaling can be expensive and has limitations, as there is a finite amount of resources that can be added to a single server.
+
+Horizontal scaling, also known as scaling out, involves increasing the capacity of a system by adding more servers or nodes. This approach distributes the workload across multiple servers, which work together to provide increased capacity and performance. Horizontal scaling is typically more cost-effective than vertical scaling, as it allows the system to grow incrementally as needed. For example, adding more servers to a web application to handle increased traffic is a form of horizontal scaling.
+
+Example - Twitter when Argintina won the worldcup then it takes servers to scale up

@@ -6,12 +6,13 @@ With the introduction of JavaScript, web developers were able to add interactivi
 
 
 
-
 JavaScript was created by Brendan Eich in just 10 days in May 1995.
 At the time, Eich was working for Netscape Communications Corporation and was tasked with creating a scripting language that would be embedded in the Netscape Navigator web browser.
 
 The original goal of JavaScript was to provide a lightweight language that would allow web developers to add dynamic content and interactivity to their web pages. Before JavaScript, web pages were static and could only display text and images. JavaScript allowed web developers to create more dynamic and interactive web pages by enabling them to manipulate the Document Object Model (DOM) and respond to user actions.
 
 Eich's original design for JavaScript was heavily influenced by other programming languages, including C, Java, and Scheme. He wanted to create a language that was easy to learn and use, while also being powerful and flexible.
+
+
 
 Over the years, JavaScript has evolved and grown in popularity, and is now used not only for web development, but also for server-side development, desktop application development, and even mobile app development.

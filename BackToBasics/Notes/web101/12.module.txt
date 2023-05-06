@@ -1,0 +1,37 @@
+Module: Util function which we can use by import export in any file in our project.
+A module is a self-contained unit of code that can be used in a larger program. It typically encapsulates a specific functionality or data structure, and can be imported or required by other modules or programs. Modules are a fundamental building block in most programming languages, and allow developers to write reusable and maintainable code.
+
+
+Package: Multiple Modules + Meta Data in zip format
+A package is a collection of modules that are grouped together and distributed as a single entity. Packages can include not only the source code for the modules, but also metadata such as version numbers, dependencies, and documentation. Packages are typically distributed in a specific format (such as a tarball or a zip file) and can be installed or managed using a package manager, which automates the process of downloading and installing dependencies.
+
+
+
+Library: modules + packages Provide functionality such as Data structures, algos, utils
+A library is a collection of reusable code that can be used to simplify and accelerate the development of software. Libraries are typically composed of a set of modules or packages that provide functionality such as data structures, algorithms, or utilities. Libraries can be created and maintained by individuals, organizations, or communities, and can be shared and reused across projects.
+
+
+
+In summary, a module is a self-contained unit of code, a package is a collection of modules that are grouped together and distributed as a single entity, and a library is a collection of reusable code that can be used to simplify and accelerate software development. Understanding the differences between these terms is important for organizing and sharing code effectively, and for collaborating with other developers on larger projects.
+
+
+
+NPM (short for "Node Package Manager") is a package manager for Node.js, which is an open-source, cross-platform JavaScript runtime environment. NPM allows developers to easily install, manage, and share third-party packages and modules written in JavaScript.
+
+
+
+
+
+
+
+
+
+Core Modules: These modules are built-in to Node.js and are available to use without installing any external packages. Examples of core modules include the 'fs' module for file system operations and the 'http' module for building HTTP servers.
+
+Local Modules: These are modules that are created locally in your project and are designed to perform specific functions or tasks. Local modules are typically stored in a separate file and are accessed through the 'require' function.
+
+Third-party Modules: These are modules that are created by developers outside of the Node.js core team and can be downloaded and installed using the Node Package Manager (npm). Third-party modules can be used to add additional functionality to your application or to simplify complex tasks. Some popular third-party modules include 'express' for building web applications and 'socket.io' for building real-time applications.
+
+
+
+

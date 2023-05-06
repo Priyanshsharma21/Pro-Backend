@@ -5,7 +5,6 @@ import connectDB from './config/database.js'
 dotenv.config()
 const { PORT } = process.env
 
-
 const startServer = async()=>{
     try {
         connectDB(process.env.MONGODB_URL)

@@ -18,23 +18,23 @@
 18. Domain Name System (DNS) - done
 19. HyperText Markup Language (HTML) - done
 20. Dev Tools - done
-21. Code Editor
-22. HTML Elements
-23. HTML Forms
-24. HTML Attributes
-25. Anchor tag
+21. Code Editor - done
+22. HTML Elements - done
+23. HTML Forms - done
+24. HTML Attributes - done
+25. Anchor tag - done
 26. Document Object Model (DOM)
 27. Head
 28. Body
 29. Accessibility and Semantics
-30. Div tag
+30. Div tag - done
 31. Cascading Style Sheets (CSS)
-32. Inline Style
+32. Inline Style - done
 33. CSS properties
 34. Cascade
 35. Style Tag
 36. Selector
-37. Class
+37. Class - done
 38. CSS Specificity
 39. External Stylesheet
 40. Box Model

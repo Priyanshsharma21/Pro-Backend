@@ -1,0 +1,44 @@
+Client
+Server
+Request
+Response
+HTTP *
+API  *
+REST  *
+Nodejs  
+ExpressJs
+HTTP Methods - Get,Post,Put,Patch,Delete
+Routes
+Controllers
+Query
+Params
+Execution Context
+Async Await 
+Promises
+MongoDB
+Mongoose
+Model
+Schema
+Methods - find, findOne, findById, findByIdAndUpdate, create, connect, findByIdAndDelete.
+find - conditions, operators 
+
+
+Git commands - 
+git init
+git add
+git commit -m"Any_Messages"
+git remote add origin https://falanadhimkana.com/falanadhimkana
+git push -u origin master
+
+git fetch
+git pull origin master
+
+git branch aadarsh
+git branch -a
+git checkout branch_name
+
+git clone https://falanadhimkana.com/falanadhimkana
+
+Termonology - staging area, local repo, remote repo
+
+

@@ -1,0 +1,20 @@
+QUERY and Params both are part of URL(Uniform Resource Locator).
+Both are send when we make HTTP request to server
+
+Params - Part Of URL.
+We write Params After endpoint.
+Declear after /
+Can be dynamic using /:id
+Can get in controller using req.params
+
+
+
+
+Query - Part of URL
+Append in URL
+Present in key value pairs
+Starts with ? and multiple seprate with &
+In controller we can get it using req.query
+Use in searching and filtering most of the times
+
+http://example.com/search?q=nodejs&sort=date&limit=10

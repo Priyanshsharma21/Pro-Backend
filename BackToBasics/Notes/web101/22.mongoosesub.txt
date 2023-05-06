@@ -1,0 +1,25 @@
+In Mongoose, a schema is a blueprint for defining the structure and validation rules for a MongoDB collection. A schema defines the fields, data types, and constraints for the documents in a collection. It helps to enforce data consistency and integrity by defining the rules for how the data should be stored.
+
+A model in Mongoose is a constructor function that provides an interface for creating, reading, updating, and deleting documents in a collection based on the schema. It represents a specific collection in MongoDB and allows developers to interact with the collection using predefined methods and queries.
+
+A collection in MongoDB is a group of related documents that are stored together in a database. It is analogous to a table in a relational database.
+
+A document in MongoDB is a record that is stored in a collection. It is analogous to a row in a table in a relational database. A document can have multiple fields, each with its own value, and can contain nested documents and arrays.
+
+Some possible interview questions related to schema, models, collections, and documents in Mongoose are:
+
+What is the purpose of a schema in Mongoose?
+How do you define a schema in Mongoose?
+How do you create a model in Mongoose?
+What is the difference between a schema and a model in Mongoose?
+How do you specify the name of the collection for a model in Mongoose?
+What is the syntax for creating a new document using a Mongoose model?
+How do you save a new document to a MongoDB collection using Mongoose?
+What is a pre-hook in Mongoose and how do you define one?
+How do you use the find() method to query a collection in Mongoose?
+How do you update a document in a collection using Mongoose?
+How do you delete a document from a collection using Mongoose?
+What is the difference between findById() and findOne() in Mongoose?
+How do you define a virtual property in a Mongoose schema?
+How do you use population to populate a field in a Mongoose document?
+What is the purpose of the lean() method in Mongoose?
